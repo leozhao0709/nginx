@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ngix:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - '81:81'
+    volumes:
+      - ./img:/app/img
